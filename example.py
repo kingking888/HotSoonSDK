@@ -17,7 +17,7 @@ if __name__ == '__main__':
     a = HotSoonClient(appkey=appkey)
     limits = 10
     uid_data = a.GetUserId('https://reflow.huoshan.com/hotsoon/s/GiUZbrFy700/')
-    useVideos = a.GetUserFollowers('73237777518',limits=limits)
+    useVideos = a.GetUserVideos('73237777518',limits=limits)
     userFollowers = a.GetUserFollowers('73237777518',limits=limits)
     userFollowings = a.GetUserFollowings('73237777518',limits=limits)
     LOG.info(f'获取到的用户uid数据:\n{uid_data}')
